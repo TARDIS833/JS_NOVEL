@@ -1,83 +1,83 @@
-# ChatDev Web Novel Writing Service User Manual
+# Web Novel Writing Service User Manual
 
-Welcome to the ChatDev Web Novel Writing Service User Manual! This manual will guide you through the installation process, introduce the main functions of the software, and provide instructions on how to use it.
+## Introduction
 
-## Table of Contents
+Welcome to the user manual for the Web Novel Writing Service. This manual will guide you through the installation process, introduce the main functions of the software, and provide instructions on how to use it effectively.
 
-1. [Installation](#installation)
-2. [Main Functions](#main-functions)
-   - [Create a Novel](#create-a-novel)
-   - [Update a Novel](#update-a-novel)
-   - [Delete a Novel](#delete-a-novel)
-3. [Usage](#usage)
-   - [Creating a Novel](#creating-a-novel)
-   - [Updating a Novel](#updating-a-novel)
-   - [Deleting a Novel](#deleting-a-novel)
+## Installation
 
-## Installation <a name="installation"></a>
+To install the Web Novel Writing Service, please follow these steps:
 
-To use the ChatDev Web Novel Writing Service, you need to have Node.js and npm (Node Package Manager) installed on your machine. Follow the steps below to install the required dependencies:
+1. Ensure that you have Python installed on your system. If not, you can download it from the official Python website (https://www.python.org/downloads/).
 
-1. Open a terminal or command prompt.
-2. Navigate to the directory where the project files are located.
-3. Run the following command to install the required dependencies:
+2. Clone the repository or download the source code from the ChatDev GitHub repository.
+
+3. Open a terminal or command prompt and navigate to the project directory.
+
+4. Create a virtual environment to isolate the dependencies of the Web Novel Writing Service. You can use the following command:
 
    ```
-   npm install express
+   python -m venv env
    ```
 
-   This will install the Express framework, which is used by the web server.
+5. Activate the virtual environment. On Windows, use the following command:
 
-## Main Functions <a name="main-functions"></a>
+   ```
+   env\Scripts\activate
+   ```
 
-The ChatDev Web Novel Writing Service provides the following main functions:
+   On macOS and Linux, use the following command:
 
-### Create a Novel <a name="create-a-novel"></a>
+   ```
+   source env/bin/activate
+   ```
 
-To create a new novel, you need to provide a title and content. The service will assign a unique ID to the novel and store it in the system.
+6. Install the required dependencies by running the following command:
 
-### Update a Novel <a name="update-a-novel"></a>
+   ```
+   pip install -r requirements.txt
+   ```
 
-To update an existing novel, you need to provide the ID of the novel, as well as the new title and content. The service will find the novel with the given ID and update its title and content.
+7. Once the installation is complete, you are ready to use the Web Novel Writing Service.
 
-### Delete a Novel <a name="delete-a-novel"></a>
+## Main Functions
 
-To delete a novel, you need to provide the ID of the novel. The service will find the novel with the given ID and remove it from the system.
+The Web Novel Writing Service provides the following main functions:
 
-## Usage <a name="usage"></a>
+1. HTML View Page: This function allows you to view the HTML content of the web novel writing service. To access this function, follow these steps:
 
-This section provides instructions on how to use the ChatDev Web Novel Writing Service.
+   - Run the `main.py` file located in the project directory.
 
-### Creating a Novel <a name="creating-a-novel"></a>
+   - A window titled "Web Novel Writing Service" will appear.
 
-To create a new novel, follow these steps:
+   - The HTML content will be displayed in a text widget.
 
-1. Open the web browser and navigate to the website where the service is hosted.
-2. Fill in the title and content fields with the desired values for your novel.
-3. Click the "Create" button.
-4. The service will create the novel and assign a unique ID to it.
-5. You will receive a success message or see the GUI update accordingly.
+   - You can scroll through the content and view it in read-only mode.
 
-### Updating a Novel <a name="updating-a-novel"></a>
+2. Novel Writing: This function allows you to write and save your web novel. This feature is currently under development and will be available in future updates.
 
-To update an existing novel, follow these steps:
+## Usage
 
-1. Open the web browser and navigate to the website where the service is hosted.
-2. Find the novel you want to update and click on it to view its details.
-3. Click the "Edit" button.
-4. Update the title and content fields with the new values for your novel.
-5. Click the "Save" button.
-6. The service will update the novel with the new title and content.
-7. You will receive a success message or see the GUI update accordingly.
+To use the Web Novel Writing Service, follow these steps:
 
-### Deleting a Novel <a name="deleting-a-novel"></a>
+1. Open a terminal or command prompt and navigate to the project directory.
 
-To delete a novel, follow these steps:
+2. Activate the virtual environment. If you have already activated it during the installation process, skip this step.
 
-1. Open the web browser and navigate to the website where the service is hosted.
-2. Find the novel you want to delete and click on it to view its details.
-3. Click the "Delete" button.
-4. The service will remove the novel from the system.
-5. You will receive a success message or see the GUI update accordingly.
+3. Run the following command to start the application:
 
-That's it! You are now ready to use the ChatDev Web Novel Writing Service. Enjoy writing your web novels!
+   ```
+   python main.py
+   ```
+
+4. The "Web Novel Writing Service" window will appear.
+
+5. To view the HTML content, navigate to the "HTML View Page" tab.
+
+6. The HTML content will be displayed in a text widget. You can scroll through the content and view it in read-only mode.
+
+7. To exit the application, close the window or press Ctrl+C in the terminal or command prompt.
+
+## Conclusion
+
+Congratulations! You have successfully installed and learned how to use the Web Novel Writing Service. Enjoy writing your web novel and stay tuned for future updates with novel writing capabilities. If you have any questions or need further assistance, please don't hesitate to contact our support team. Happy writing!

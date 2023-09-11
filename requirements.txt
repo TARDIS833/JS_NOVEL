@@ -1,1 +1,6 @@
-npm install express
+# requirements.txt
+
+# tkinter is required for the GUI
+tkinter==8.6
+
+# Add any other dependencies here
